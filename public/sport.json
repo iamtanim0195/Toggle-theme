@@ -1,0 +1,32 @@
+{
+  "sports":[
+    {
+      "id": 1,
+      "title": "Sacramento River Cats",
+      "total-events": 90,
+      "sport": "Football",
+      "image": "https://i.ibb.co/c685HLK/dc33760174d3f67737f6e318d0f118ff.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Las Vegas Aviators",
+      "total-events": 48,
+      "sport": "Basketball",
+      "image": "https://i.ibb.co/MMD7NrM/76e2b366b2456bbd169b0c3c9525252c.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Las Vegas Aviators",
+      "total-events": 5,
+      "sport": "Tennis",
+      "image": "https://i.ibb.co/c685HLK/dc33760174d3f67737f6e318d0f118ff.jpg"
+    },
+    {
+      "id": 4,
+      "title": "new jersey devils",
+      "total-events": 72,
+      "sport": "Golf",
+      "image": "https://i.ibb.co/nDZz6Wt/b2fcf21c696811f745109da24a740d73.jpg"
+    }
+  ]
+  }
