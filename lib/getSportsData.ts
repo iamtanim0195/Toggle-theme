@@ -5,6 +5,12 @@ type DataProps = {
     events: number,
     sport: string,
     image: string,
+    date:string,
+    day:string,
+    time:string,
+    add:string,
+    btn:string,
+
 }
 
 export default async function getSportsData() {

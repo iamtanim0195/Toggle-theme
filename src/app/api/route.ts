@@ -29,6 +29,47 @@ export function GET (){
             "sport": "ice hockey",
             "image": "https://i.ibb.co/nDZz6Wt/b2fcf21c696811f745109da24a740d73.jpg"
           }
+    ],
+    spotlight: [
+        {
+          "id": 1,
+          "title": "Sacramento River Cats",
+          "date": "OCT 15",
+          "day":"SUN",
+          "add": "Las Vegas Ballpark, Las Vegas, Nevada",
+          "btn": "Take Flight Collection",
+          "image": "https://i.ibb.co/D5H58GP/a2c7e5def5b347470305864869a894b6.jpg"
+        },
+          {
+            "id": 2,
+            "title": "Las Vegas Aviators",
+            "date": "OCT 15",
+            "day":"SUN",
+            "time":"4:30 PM",
+            "add": "Las Vegas Ballpark, Las Vegas, Nevada",
+            "btn": "Orange Collection",
+            "image": "https://i.ibb.co/PrhPnn1/b6e3aeda879dc6f22f94711c788789b5.jpg"
+          },
+          {
+            "id": 3,
+            "title": "Sacramento River Cats",
+            "date": "OCT 15",
+            "day":"SUN",
+            "time":"4:30 PM",
+            "add": "Las Vegas Ballpark, Las Vegas, Nevada",
+            "btn": "Orange Collection",
+            "image": "https://i.ibb.co/D5H58GP/a2c7e5def5b347470305864869a894b6.jpg"
+          },
+          {
+            "id": 4,
+            "title": "New jersey devils",
+            "date": "OCT 15",
+            "day":"SUN",
+            "time":"4:30 PM",
+            "add": "Las Vegas Ballpark, Las Vegas, Nevada",
+            "btn": "Take Flight Collection",
+            "image": "https://i.ibb.co/PrhPnn1/b6e3aeda879dc6f22f94711c788789b5.jpg"
+          }
     ]
 }
 

@@ -4,10 +4,12 @@ import Sports from "@/components/Sports/Sports";
 
 export default function Home() {
   return (
-    <main className="mx-10">
-      <Navbar />
-      <Sports />
-      <Collection />
+    <main className="dark:bg-[#292B32]">
+      <div className="mx-10 ">
+        <Navbar />
+        <Sports />
+        <Collection />
+      </div>
     </main>
 
   );
