@@ -37,7 +37,7 @@ const Collection = async () => {
                     <p className="w-3/4 mx-auto">Discover extraordinary moments with our Spotlight Collection metatickets—exclusive access to premium events for an unforgettable experience. Grab yours today!</p>
                 </div>
                 <div className=' m-auto p-1 pb-4 xl:p-5'>
-                    <MySwiper data={data}></MySwiper>
+                    <MySwiper data={data.spotlight}></MySwiper>
                 </div>
             </div>
         </div>

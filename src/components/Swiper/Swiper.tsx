@@ -22,8 +22,12 @@ type SpotlightItem = {
     btn: string;
     image: string;
 }
+type DataTypeProps = {
+    data: SpotlightItem[];
+}
 
-const MySwiper = ({ data }:any) => {
+const MySwiper = ({ data }: DataTypeProps) => {
+    console.log(data);
     return (
         <div className='w-full '>
             <Swiper
@@ -56,7 +60,7 @@ const MySwiper = ({ data }:any) => {
                 onSwiper={(swiper) => console.log(swiper)}
                 navigation={true} modules={[Navigation]}
             >
-                {data?.spotlight?.map((item:SpotlightItem) => ( // Accessing sports property from the first element
+                {data?.map((item: SpotlightItem) => ( // Accessing sports property from the first element
                     <SwiperSlide key={item.id}>
                         <div
                             className='bg-white p-2 w-60 lg:min-w-64 xl:w-96 mx-auto text-center flex flex-col  justify-between dark:bg-zinc-700 overflow-hidden'
