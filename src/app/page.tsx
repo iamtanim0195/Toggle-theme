@@ -5,7 +5,7 @@ import Sports from "@/components/Sports/Sports";
 export default function Home() {
   return (
     <main className="dark:bg-[#292B32]">
-      <div className="mx-10 ">
+      <div className="px-10">
         <Navbar />
         <Sports />
         <Collection />

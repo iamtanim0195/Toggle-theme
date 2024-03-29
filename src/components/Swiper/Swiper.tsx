@@ -27,7 +27,6 @@ type DataTypeProps = {
 }
 
 const MySwiper = ({ data }: DataTypeProps) => {
-    console.log(data);
     return (
         <div className='w-full '>
             <Swiper
@@ -36,23 +35,23 @@ const MySwiper = ({ data }: DataTypeProps) => {
                     {
                         320: {
                             slidesPerView: 1,
-                            spaceBetween: 15,
+                            spaceBetween: 5,
                         },
                         640: {
                             slidesPerView: 2,
-                            spaceBetween: 30,
+                            spaceBetween: 5,
                         },
                         768: {
                             slidesPerView: 2,
-                            spaceBetween: 30,
+                            spaceBetween: 5,
                         },
                         1024: {
                             slidesPerView: 3,
-                            spaceBetween: 30,
+                            spaceBetween: 5,
                         },
                         1280: {
-                            slidesPerView: 4,
-                            spaceBetween: 30,
+                            slidesPerView: 3,
+                            spaceBetween: 5,
                         },
                     }
                 }
@@ -63,7 +62,7 @@ const MySwiper = ({ data }: DataTypeProps) => {
                 {data?.map((item: SpotlightItem) => ( // Accessing sports property from the first element
                     <SwiperSlide key={item.id}>
                         <div
-                            className='bg-white p-2 w-60 lg:min-w-64 xl:w-96 mx-auto text-center flex flex-col  justify-between dark:bg-zinc-700 overflow-hidden'
+                            className='bg-white p-2 w-60 lg:min-w-64 xl:w-80 mx-auto text-center flex flex-col  justify-between dark:bg-zinc-700 overflow-hidden'
                         >
                             <div className=''>
                                 <Image

@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.swiper-button-prev:after{
+    border: 2px solid blue !important;
+    padding: 5px !important;
+    position: relative !important;
+}
+.swiper-button-next:after{   
+        border: 2px solid blue !important;
+        padding: 5px !important;   
+}
