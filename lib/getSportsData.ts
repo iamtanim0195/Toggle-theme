@@ -23,7 +23,7 @@ type ResponseData = {
     spotlight: SpotlightItem[];
 }
 export default async function getSportsData() {
-    const response = await fetch('http://localhost:3000/api/',{cache:'no-store'});
+    const response:Response = await fetch('http://localhost:3000/api/',{cache:'no-store'});
     if (!response) {
         throw new Error("Could not fetch data");
     }

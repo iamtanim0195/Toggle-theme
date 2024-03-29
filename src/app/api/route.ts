@@ -1,4 +1,4 @@
-export function GET (){
+export function GET  (){
   let res = {
     sports: [
         {
