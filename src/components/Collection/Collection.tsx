@@ -14,7 +14,7 @@ const Collection = async () => {
                     <p className={`${poppins.className} text-4xl p-2`}>Collection Spotlight</p>
                     <p className="w-3/4 mx-auto">Discover extraordinary moments with our Spotlight Collection metatickets—exclusive access to premium events for an unforgettable experience. Grab yours today!</p>
                 </div>
-                <div className='w-3/4 m-auto p-5 '>
+                <div className=' m-auto p-1 pb-4 xl:p-5'>
                     <MySwiper data={data}></MySwiper>
                 </div>
             </div>

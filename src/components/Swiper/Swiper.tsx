@@ -29,8 +29,31 @@ const MySwiper = ({ data }) => {
     return (
         <div className='w-full '>
             <Swiper
-                spaceBetween={50}
-                slidesPerView={3}
+
+                breakpoints={
+                    {
+                        320: {
+                            slidesPerView: 1,
+                            spaceBetween: 15,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        1280: {
+                            slidesPerView: 4,
+                            spaceBetween: 30,
+                        },
+                    }
+                }
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 navigation={true} modules={[Navigation]}
@@ -38,7 +61,7 @@ const MySwiper = ({ data }) => {
                 {data?.spotlight.map((item: DataProps) => ( // Accessing sports property from the first element
                     <SwiperSlide key={item.id}>
                         <div
-                            className='bg-white w-[20vw] text-center flex flex-col  justify-between   p-2  dark:bg-zinc-700 overflow-hidden'
+                            className='bg-white p-2 w-60 lg:min-w-64 xl:w-96 mx-auto text-center flex flex-col  justify-between dark:bg-zinc-700 overflow-hidden'
                         >
                             <div className=''>
                                 <Image
@@ -59,13 +82,13 @@ const MySwiper = ({ data }) => {
                                 </div>
                                 <p className=''>{item?.title}</p>
                             </div>
-                            <div className={`${poppins.className} flex mx-auto`}>
-                                <p>{item.date}</p>
-                                <p> | {item.day} | </p>
-                                <p>{item.time}</p>
+                            <div className={`${poppins.className} flex mx-auto gap-2`}>
+                                <p>{item.date}&nbsp;</p>
+                                <p>|&nbsp;{item.day}&nbsp;|</p>
+                                <p> &nbsp; {item.time}</p>
                             </div>
                             <p>{item.add}</p>
-                            <p className='bg-black p-3 w-60 mx-auto'>{item.btn}</p>
+                            <p className='text-white  bg-black p-3 w-52 mx-auto'>{item.btn}</p>
                         </div>
                     </SwiperSlide>
                 ))}
