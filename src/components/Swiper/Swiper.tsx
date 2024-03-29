@@ -23,7 +23,7 @@ type SpotlightItem = {
     image: string;
 }
 
-const MySwiper = ({ data }) => {
+const MySwiper = ({ data }:{data:any}) => {
     return (
         <div className='w-full '>
             <Swiper

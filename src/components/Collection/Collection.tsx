@@ -13,7 +13,7 @@ interface SpotlightItem {
     image: string;
 }
 type ResponseData = {
-    sports: SportsItem[];
+
     spotlight: SpotlightItem[];
 }
 const poppins = Poppins({ subsets: ["latin"], weight: ['700'] });
