@@ -12,17 +12,15 @@ import 'swiper/css/navigation';
 import { Poppins } from 'next/font/google';
 const poppins = Poppins({ subsets: ["latin"], weight: ['400'] });
 
-type DataProps = {
-    id: number,
-    title: string,
-    events: number,
-    sport: string,
-    image: string,
-    date: string,
-    day: string,
-    time: string,
-    add: string,
-    btn: string,
+type SpotlightItem = {
+    id: number;
+    title: string;
+    date: string;
+    day: string;
+    time?: string;
+    add: string;
+    btn: string;
+    image: string;
 }
 
 const MySwiper = ({ data }) => {
@@ -58,7 +56,7 @@ const MySwiper = ({ data }) => {
                 onSwiper={(swiper) => console.log(swiper)}
                 navigation={true} modules={[Navigation]}
             >
-                {data?.spotlight.map((item: DataProps) => ( // Accessing sports property from the first element
+                {data?.spotlight.map((item:SpotlightItem) => ( // Accessing sports property from the first element
                     <SwiperSlide key={item.id}>
                         <div
                             className='bg-white p-2 w-60 lg:min-w-64 xl:w-96 mx-auto text-center flex flex-col  justify-between dark:bg-zinc-700 overflow-hidden'

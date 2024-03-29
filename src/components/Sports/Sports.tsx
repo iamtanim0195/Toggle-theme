@@ -2,16 +2,9 @@ import React from 'react';
 import getSportsData from '../../../lib/getSportsData';
 import Image from 'next/image';
 import AppBtn from '../AppBtn';
-type DataProps = {
-    id: number,
-    title: string,
-    events: number,
-    sport: string,
-    image: string,
-}
 
 const Sports = async () => {
-    const data = await getSportsData();
+    const data= await getSportsData();
     const handleClick = () => {
         console.log('Button clicked');
     };
@@ -19,7 +12,7 @@ const Sports = async () => {
         <div className='mt-5 w-full'>
             <h1 className='mb-4 border-b-4 border-blue-500 w-14'>Sports</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-3 2xl:gap-5  overflow-hidden '>
-                {data.sports.map((item: DataProps) => ( // Accessing sports property from the first element
+                {data?.sports.map((item) => ( // Accessing sports property from the first element
                     <div key={item.id}
                         className='flex flex-col justify-between p-2 mx-auto  w-[75vw] md:w-64 lg:w-72 2xl:w-96 dark:bg-zinc-700 bg-white border border-gray-200 shadow  dark:border-gray-700'
                     >
